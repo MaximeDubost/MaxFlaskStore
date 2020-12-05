@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "ff0d478d-c06d-4b10-abba-caea0fc6921f",
+		"name": "MaxFlaskStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtenir les routes disponibles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Créer un produit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Produit 4\",\n    \"description\": \"Description produit 4\",\n    \"price\": 4,\n    \"quantity\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtenir tous les produits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtenir un produit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com/product/1",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mettre à jour un produit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Produit 2 (updated)\",\n    \"description\": \"Description produit 2 (updated)\",\n    \"price\": 2,\n    \"quantity\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com/product/2",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supprimer un produit",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://max-flask-store.herokuapp.com/product/3",
+					"protocol": "https",
+					"host": [
+						"max-flask-store",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
