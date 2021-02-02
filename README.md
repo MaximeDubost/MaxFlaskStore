@@ -8,11 +8,11 @@
 L'API permet d'effectuer les action **CRUD** (Create, Read, Update, Delete) sur des produits d'un shop en ligne.
 
 Celle-ci dispose donc de **5** routes :
-- **`GET`** *`/product`* `:` Obtenir tous les produits
-- **`GET`** *`/product/<id>`* `:` Obtenir un produit
-- **`POST`** *`/product`* `:` Ajouter un produit
-- **`UPDATE`** *`/product/<id>`* `:` Modifier un produit
-- **`DELETE`** *`/product/<id>`* `:` Supprimer un produit
+- **`GET`** *`/product`* : Obtenir tous les produits
+- **`GET`** *`/product/<id>`* : Obtenir un produit
+- **`POST`** *`/product`* : Ajouter un produit
+- **`UPDATE`** *`/product/<id>`* : Modifier un produit
+- **`DELETE`** *`/product/<id>`* : Supprimer un produit
 
 L'API interagit avec une base de données **SQLite** à l'aide des ORM **SQLAlchemy** et **Marshmallow**.
 
